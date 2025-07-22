@@ -1,0 +1,6 @@
+definition_version: 1
+streamlit:
+  name: age_guesser_app
+  query_warehouse: CUBE_TESTING
+  main_file: streamlit_app.py
+  title: "Age Guesser with Snowflake Cortex" 
