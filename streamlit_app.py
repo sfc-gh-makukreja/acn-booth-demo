@@ -87,7 +87,7 @@ def guess_age_with_cortex(image_base64):
             # Clean up temporary file and stage file
             os.unlink(temp_path)
             try:
-                session.sql(f"REMOVE '@temp_images_stage/{filename}/{temp_file_name}'").collect()
+                session.sql(f"rm '@temp_images_stage/{filename}/{temp_file_name}'").collect()
             except:
                 pass  # Ignore cleanup errors
             
